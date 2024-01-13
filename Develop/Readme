@@ -1,0 +1,12 @@
+Welcome to Michael Chiem "Random Password Generator" program.
+
+Credit to: ChatGTP and Daniel Vega
+
+First thing I created is variables.
+    - characterLength
+    - choiceArray
+    - specialCharacterArray
+    - lowerCaseCharacterArray
+    - upperCaseCharacterArray
+    - numberCharacterArray
+
