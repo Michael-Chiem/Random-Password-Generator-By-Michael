@@ -17,11 +17,17 @@ generateBtn.addEventListener("click", writePassword);
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
-  
+
   passwordText.value = password;
 }
 
+function popUPScrenn () {
+  characterLength = parseInt(prompt("How many characters would you like to have?"));
 
+  if (isNaN(characterLength) || characterLength < 8 || characterLength > 128) {
+    alert("You must input a valid number between 8 to 128. Please try again (Number Only)!")
+  }
+}
 
 
 
