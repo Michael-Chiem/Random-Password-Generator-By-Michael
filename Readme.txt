@@ -19,5 +19,10 @@ Next step is to add prompt to cofirm if the users want to have lower case, upper
     - I used confirm parameter to create a prompt for the four arrays.
     - When the user click Ok to have the lower case in there, password. I used a parameter call concatenate the choiceArray with the lowerCaseCharacterArray.
 
+Next step is to add the rest of the if statements, concatenate the choiceArray with selection variables.
+    - I added if statements for specialCharacterArray, upperCaseCharacterArray and numberCharacterArray
+    - I test my codes by using console debug log.
+    - I ran "popUpScreen ();" to verify the prompt and selection are working. Which they are.
+
 
 

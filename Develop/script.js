@@ -32,6 +32,17 @@ if (confirm("Do you need lowercase characters in your new password?")) {
   choiceArray = choiceArray.concat(lowerCaseCharacterArray);
 }
 
+if (confirm("Do you need uppercase characters in your new password?")) {
+  choiceArray = choiceArray.concat(upperCaseCharacterArray);
+}
+
+if (confirm("Do you need special characters in your new password?")) {
+  choiceArray = choiceArray.concat(specialCharacterArray);
+}
+
+if (confirm("Do you need numbers in your new password?")) {
+  choiceArray = choiceArray.concat(numberCharacterArray);
+}
 
 
 }
