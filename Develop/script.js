@@ -21,13 +21,17 @@ function writePassword() {
   passwordText.value = password;
 }
 
-function popUPScrenn () {
+function popUPScreen () {
   characterLength = parseInt(prompt("How many characters would you like to have?"));
 
   if (isNaN(characterLength) || characterLength < 8 || characterLength > 128) {
     alert("You must input a valid number between 8 to 128. Please try again (Number Only)!")
   }
+
+if (confirm("Do you need lowercase characters in your new password?")) {
+  choiceArray = choiceArray.concat(lowerCaseCharacterArray);
 }
 
 
 
+}
