@@ -31,6 +31,7 @@ I tested the Generate Password button by clicking on it, then I get a prompt, af
 I updated the special characters variables so that I can easily read the file structure.
 
 Next step, I create a function for the generatePassword by using for lop parameter and return the output by adding to the choiceArray variables.
+    - I also used Math floor to round the numbers to the nearest, and used Math random to help with select the randon character in the variables.
     - When I tested my codes, I noticed that when an incorrect value used in the characterLength, the system still processing the other parameter.
     - To fixed this problem, I will added recursive call to itself if the user enters an invalide character length.
     - The recursive call ensures that the user is prompted again until a valid input is received.
