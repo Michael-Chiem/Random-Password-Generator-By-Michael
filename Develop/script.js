@@ -12,22 +12,20 @@ var upperCaseCharacterArray = upperCaseCharacters.split('');
 var numberCharacterArray = numberCharacters.split('');
 
 
-// Assignment Code
 var generateBtn = document.querySelector("#generate");
 
-// Add event listener to generate button
 generateBtn.addEventListener("click", function() {
   popUPScreen();
   writePassword();
 });
 
 
-// Write password to the #password input
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
   passwordText.value = password;
 }
+
 
 function popUPScreen () {
   characterLength = parseInt(prompt("How many characters would you like to have?"));
@@ -50,6 +48,13 @@ if (confirm("Do you need special characters in your new password?")) {
 
 if (confirm("Do you need numbers in your new password?")) {
   choiceArray = choiceArray.concat(numberCharacterArray);
-}
+}}
 
+function generatePassword() {
+  var password = "";
+  for (var i = 0; i < characterLength; i++) {
+    var computerAIGeneratedCharacters = Math.floor(Math.random() * choiceArray.length);
+    password = password + choiceArray[computerAIGeneratedCharacters]
+  }
+  return password;
 }

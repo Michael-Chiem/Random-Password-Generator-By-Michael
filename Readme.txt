@@ -27,3 +27,10 @@ Next step is to add the rest of the if statements, concatenate the choiceArray w
 Next step, I added the popUpScreen function into the eventlistener-
 so that when the end user clicked on the Generate Password button, the popUpScreen parameter prompt the user to insert and select the values.
 I tested the Generate Password button by clicking on it, then I get a prompt, after select the values, I got an error messages on my console log "writtenPassword is not defined"
+
+I updated the special characters variables so that I can easily read the file structure.
+
+Next step, I create a function for the generatePassword by using for lop parameter and return the output by adding to the choiceArray variables.
+    - When I tested my codes, I noticed that when an incorrect value used in the characterLength, the system still processing the other parameter.
+    - To fixed this problem, I will added recursive call to itself if the user enters an invalide character length.
+    - The recursive call ensures that the user is prompted again until a valid input is received.
