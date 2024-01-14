@@ -1,4 +1,4 @@
-var characterLength = 8;
+var numberLength = 8;
 var choiceArray = [];
 
 var specialCharacters = '!@#$%^&*(){}[]/:;';
@@ -30,10 +30,10 @@ function writePassword() {
 }
 
 function popUPScreen () {
-  characterLength = parseInt(prompt("How many characters would you like to have?"));
+  numberLength = parseInt(prompt("How many characters would you like to have?"));
 
-  if (isNaN(characterLength) || characterLength < 8 || characterLength > 128) {
-    alert("You have entered an incorrect value, use number only (between 8 - 128). Please try again!")
+  if (isNaN(numberLength) || numberLength < 8 || numberLength > 128) {
+    alert("Please retry. The valid input should be a numerical value within the range of 8 to 128.");
     popUPScreen();
     return;
   }
@@ -56,7 +56,7 @@ if (confirm("Do you need numbers in your new password?")) {
 
 function generatePassword() {
   var password = "";
-  for (var i = 0; i < characterLength; i++) {
+  for (var i = 0; i < numberLength; i++) {
     var computerAIGeneratedCharacters = Math.floor(Math.random() * choiceArray.length);
     password = password + choiceArray[computerAIGeneratedCharacters]
   }
