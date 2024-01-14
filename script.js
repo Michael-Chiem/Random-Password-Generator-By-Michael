@@ -26,6 +26,7 @@ function writePassword() {
   passwordText.value = password;
   passwordText.style.color = "red";
   passwordText.style.fontWeight = "bold";
+  passwordText.classList.add("flashing");
 }
 
 function popUPScreen () {
