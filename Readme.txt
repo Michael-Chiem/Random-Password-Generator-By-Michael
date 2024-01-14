@@ -13,7 +13,7 @@ First thing I created is variables.
 Next step is to create a function for a prompt
     - I used parseInt to convert string to number.
     - I used a parameter call "Not-A-Number" (NaN). To alert user is they are inputing the wrong value.
-    - To test my codes, I inpected it and in the console, I typed "popUpScreen();" to see if the prompt is working, in this case, it's working as expected.
+    - To test my codes, I inspected it and in the console, I typed "popUpScreen();" to see if the prompt is working, in this case, it's working as expected.
 
 Next step is to add prompt to cofirm if the users want to have lower case, upper case, special characters and number in their password.
     - I used confirm parameter to create a prompt for the four arrays.
@@ -24,5 +24,6 @@ Next step is to add the rest of the if statements, concatenate the choiceArray w
     - I test my codes by using console debug log.
     - I ran "popUpScreen ();" to verify the prompt and selection are working. Which they are.
 
-
-
+Next step, I added the popUpScreen function into the eventlistener-
+so that when the end user clicked on the Generate Password button, the popUpScreen parameter prompt the user to insert and select the values.
+I tested the Generate Password button by clicking on it, then I get a prompt, after select the values, I got an error messages on my console log "writtenPassword is not defined"

@@ -10,14 +10,16 @@ var numberCharacterArray = ['1','2','3','4','5','6','7','8','9','0'];
 var generateBtn = document.querySelector("#generate");
 
 // Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+generateBtn.addEventListener("click", function() {
+  popUPScreen();
+  writePassword();
+});
 
 
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
-
   passwordText.value = password;
 }
 
@@ -43,6 +45,5 @@ if (confirm("Do you need special characters in your new password?")) {
 if (confirm("Do you need numbers in your new password?")) {
   choiceArray = choiceArray.concat(numberCharacterArray);
 }
-
 
 }
