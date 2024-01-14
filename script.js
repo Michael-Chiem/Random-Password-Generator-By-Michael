@@ -26,18 +26,25 @@ function writePassword() {
   passwordText.value = password;
   passwordText.style.color = "red";
   passwordText.style.fontWeight = "bold";
-  alert("Congratulations! Your new password is: " + password);
 }
 
 function popUPScreen () {
   choiceArray = [];
+  var incorrectAttempts = 0;
+
+  function promptUser() {
   numberLength = parseInt(prompt("How many characters would you like to have?"));
 
   if (isNaN(numberLength) || numberLength < 8 || numberLength > 128) {
+    incorrectAttempts++;
+  if (incorrectAttempts <3) {
     alert("Please retry. The valid input should be a numerical value within the range of 8 to 128.");
-    popUPScreen();
-    return;
+    promptUser();
+  } else {
+    alert("Please try it again later. Have a nice day!");
   }
+} else {
+  incorrectAttempts = 0;
 
 if (confirm("Do you need lowercase characters in your new password?")) {
   choiceArray = choiceArray.concat(lowerCaseCharacterArray);
@@ -53,7 +60,13 @@ if (confirm("Do you need special characters in your new password?")) {
 
 if (confirm("Do you need numbers in your new password?")) {
   choiceArray = choiceArray.concat(numberCharacterArray);
-}}
+    }
+  }
+}
+
+promptUser();
+
+}
 
 function generatePassword() {
   var password = "";
