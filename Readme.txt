@@ -48,5 +48,7 @@ In the final step, I added the popUpScreen into the popUpScreen function and kep
 I also added the alert "Congratulations, your new password is:
 I also changed the password text to red and bolded the font.
 
+I added flash around the password text box so the user can stay focus to the new password value.
 
+I also added failed safe reset, after three failed attempts inputting the number length. The system prompt a message and stop processing the request.
 
