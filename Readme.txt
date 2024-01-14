@@ -35,3 +35,7 @@ Next step, I create a function for the generatePassword by using for lop paramet
     - When I tested my codes, I noticed that when an incorrect value used in the characterLength, the system still processing the other parameter.
     - To fixed this problem, I will added recursive call to itself if the user enters an invalide character length.
     - The recursive call ensures that the user is prompted again until a valid input is received.
+
+The final step, I added the popUpScreen into the popUpScreen function and keep return the prompt until the end users is insert the correct value.
+I also added the alert "Congratulation, your new password is:
+I also change the password text to color red and bold the font.

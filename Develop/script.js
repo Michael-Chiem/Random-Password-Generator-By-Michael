@@ -24,14 +24,18 @@ function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
   passwordText.value = password;
+  passwordText.style.color = "red";
+  passwordText.style.fontWeight = "bold";
+  alert("Congratulations! Your new password is: " + password);
 }
-
 
 function popUPScreen () {
   characterLength = parseInt(prompt("How many characters would you like to have?"));
 
   if (isNaN(characterLength) || characterLength < 8 || characterLength > 128) {
     alert("You have entered an incorrect value, use number only (between 8 - 128). Please try again!")
+    popUPScreen();
+    return;
   }
 
 if (confirm("Do you need lowercase characters in your new password?")) {
