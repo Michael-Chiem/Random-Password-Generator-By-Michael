@@ -30,6 +30,7 @@ function writePassword() {
 }
 
 function popUPScreen () {
+  choiceArray = [];
   numberLength = parseInt(prompt("How many characters would you like to have?"));
 
   if (isNaN(numberLength) || numberLength < 8 || numberLength > 128) {
